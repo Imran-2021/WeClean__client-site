@@ -18,18 +18,7 @@ const User = () => {
             })
 
     }, [loggedInUser.email])
-    const handlereview=()=>{
-        document.getElementById("show_it").style.display="block"
-        document.getElementById("order").style.display="none"
-        document.getElementById("addservice").style.display="none"
-    }
-    const handleorder=()=>{
-        document.getElementById("show_it").style.display="none"
-        document.getElementById("order").style.display="block"
-        document.getElementById("addadmin").style.display="none"
-        document.getElementById("addservice").style.display="none"
-    }
-
+    
 
 
     //
@@ -46,17 +35,33 @@ const User = () => {
         }
     }
     //
-
+    
     const handleservices=()=>{
-       
+        document.getElementById("addadmin").style.display="none"
+        document.getElementById("show_it").style.display="none"
         document.getElementById("addservice").style.display="block"
         document.getElementById("order").style.display="none"
     }
     const handleadmin=()=>{
+        document.getElementById("show_it").style.display="none"
         document.getElementById("order").style.display="none"
         document.getElementById("addservice").style.display="none"
         document.getElementById("addadmin").style.display="block"
     }
+    
+    const handleorder=()=>{
+        document.getElementById("show_it").style.display="none"
+        document.getElementById("order").style.display="block"
+        document.getElementById("addadmin").style.display="none"
+        document.getElementById("addservice").style.display="none"
+    }
+    const handlereview=()=>{
+        document.getElementById("show_it").style.display="block"
+        document.getElementById("order").style.display="none"
+        document.getElementById("addservice").style.display="none"
+        document.getElementById("addadmin").style.display="none"
+    }
+
     return (
         <div>
             <div className="body">

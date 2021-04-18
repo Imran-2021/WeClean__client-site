@@ -30,11 +30,11 @@ const Admin = () => {
         <div>
             <div className="body">
             
-            <div className="page-content p-5 " id="content">
+            <div className=" p-5 " id="content">
                     <div className="separator"></div>
                     <div className="row text-white">
                         <div className="col-lg-7">
-                        <div id="submit" style={{textAlign:"center"}}>
+                        <div id="submit">
                         <h3>Add New Services..</h3>
                         <div>
                         <form onSubmit={handleSubmit(onSubmit)}>

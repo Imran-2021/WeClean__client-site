@@ -24,7 +24,7 @@ const Adminn = () => {
     const { register, handleSubmit } = useForm();
     return (
         <div>
-            <div id="submit" style={{textAlign:"center"}}>
+            <div id="submit" >
                 <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
 

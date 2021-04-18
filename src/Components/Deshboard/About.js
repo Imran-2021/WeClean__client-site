@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "./About.css"
 const About = () => {
     return (
-        <div>
+        <div className="aboutstyle">
             <p style={{textAlign:"justify"}} className="text-secondary container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, expedita sit voluptatum quod laboriosam repudiandae id. Quam omnis deserunt atque sequi natus doloremque consectetur blanditiis exercitationem deleniti veniam vel epe facilis placeat officiis odit atque aperiam dolorum a maiores maxime, illum assumenda aspernatur totam illo sunt optio perspiciatis amet laboriosam libero fuga esse! Eum saepe quaerat aliquam nam natus magnam vitae!</p>
             <p style={{textAlign:"justify"}} className="text-secondary container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, expedita sit voluptatum quod laboriosam repudiandae id. Quam omnis deserunt atque sequi natus doloremque consectetur blanditiis exercitationem deleniti veniam vel epe facilis placeat officiis odit atque aperiam dolorum a maiores maxime, illum assumenda aspernatur totam illo sunt optio perspiciatis amet laboriosam libero fuga esse! Eum saepe quaerat aliquam nam natus magnam vitae!</p>
             <p style={{textAlign:"justify"}} className="text-secondary container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, expedita sit voluptatum quod laboriosam repudiandae id. Quam omnis deserunt atque sequi natus doloremque consectetur blanditiis exercitationem deleniti veniam vel epe facilis placeat officiis odit atque aperiam dolorum a maiores maxime, illum assumenda aspernatur totam illo sunt optio perspiciatis amet laboriosam libero fuga esse! Eum saepe quaerat aliquam nam natus magnam vitae!</p>

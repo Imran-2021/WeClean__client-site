@@ -1,10 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
-import { UserContext } from '../../App';
 import "./Sidebar.css"
 const Admin = () => {
-    const [loggedInUser,setLoggedInUser]=useContext(UserContext);
     const onSubmit = data => {
         alert('successfully submit')
         const eventData = {
@@ -32,34 +29,7 @@ const Admin = () => {
     return (
         <div>
             <div className="body">
-            {/* vertical nav */}
-            <div className="vertical-nav bg-white" id="sidebar">
-                <div className="py-4 px-4 mb-4 bg-light">
-                    <div className="media d-flex align-items-center ">
-                        <img src={loggedInUser.photoURL} alt="" width="80" height="80" className="mr-3 rounded-circle img-thumbnail shadow-sm"   />
-                        <div className="media-body">
-                            <h4 className="m-0">{loggedInUser.name}</h4>
-                            <p className="font-weight-normal text-muted mb-0">web developer</p>
-                        </div>
-                    </div>
-                </div>
-                <p className="text=gray font-weight-bold text-uppercase px-4 small pb-4 mb-0 ">Dashboard</p>
-                <ul className="nav flex-column bg-white mb-0 ">
-                    <li className="nav-item">
-                        <Link className="nav-link bg-dark text-light">Admins</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link  className="nav-link bg-dark text-light">addNewService</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link  className="nav-link bg-dark text-light">All Services</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link  className="nav-link bg-dark text-light">Update Services</Link>
-                    </li>
-
-                </ul>
-            </div>
+            
             <div className="page-content p-5 " id="content">
                     <div className="separator"></div>
                     <div className="row text-white">
@@ -81,10 +51,6 @@ const Admin = () => {
                         </div>
                 
                     </div>
-                        </div>
-                        <div className="col-lg-5">
-                        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio soluta rerum, doloribus mollitia reiciendis maiores unde voluptatibus dolorum autem corporis doloremque eligendi sequi quasi commodi aliquid, vel impedit nihil laborum.</p>
-                        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio soluta rerum, doloribus mollitia reiciendis maiores unde voluptatibus dolorum autem corporis doloremque eligendi sequi quasi commodi aliquid, vel impedit nihil laborum.</p>
                         </div>
                     </div>
             </div>

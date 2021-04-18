@@ -16,7 +16,7 @@ const Reviews = () => {
             <h2 className="text-center pt-3">-Testimonial-</h2>
             <div className="d-flex justify-content-center">
 
-                <div className=" d-flex  justify-content-center row">
+                <div className=" d-flex  row">
                     {
                         review.map(info => <Review info={info}/>)
                     }

@@ -19,17 +19,17 @@ const Navbar = () => {
         <li class="nav-item">
           <Link class="nav-link active" to="/about"><h4>About us</h4></Link>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <Link class="nav-link active" to="/admin"><h4>Admin</h4></Link>
-        </li>
+        </li> */}
         <li class="nav-item">
-          <Link class="nav-link active" to="/user"><h4>userProfile</h4></Link>
+          <Link class="nav-link active" to="/user"><h4>Dashboard</h4></Link>
         </li>
         {
           loggedInUser.email?<li class="nav-item">
           <Link class="nav-link active" onClick={()=>setLoggedInUser({})} to="/login"><h4>Log Out</h4></Link>
         </li>:<li class="nav-item">
-          <Link class="nav-link active" to="/login"><h4>Log In</h4></Link>
+          <Link class="nav-link active" to="/user"><h4>Log In</h4></Link>
         </li>
         }
         

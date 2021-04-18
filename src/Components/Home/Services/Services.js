@@ -11,13 +11,13 @@ const Services = () => {
         .then(data=>setServices(data))
     },[])
     return (
-        <div className="container styleofbod" style={{height:"600px",}}>
+        <div className="container styleofbod pb-5" style={{height:"100%",}}>
             <div className="text-center ">
-                <h5 className=" pt-5" style={{color: '#1CC7C1'}}>OUR SERVICES</h5>
+                <h5 className=" pt-5 " style={{color: '#1CC7C1'}}>OUR SERVICES</h5>
                 <h2>Services We Provide...</h2>
             </div>
             <div className="">
-                <div className="d-flex justify-content-center row mt-5">
+                <div className="d-flex justify-content-center row mt-5 pb-3">
                     {
                         services.map(service => < ServiceDetails service={service} key={service.name}/>)
                     }

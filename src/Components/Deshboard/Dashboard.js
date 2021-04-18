@@ -74,7 +74,7 @@ const Dashboard = () => {
             <div className="container text-secondary" id="success" style={{display:'none'}}>
                     <h3>Hi, <span className="text-info">{loggedInUser.name}</span></h3>
                     <hr/>
-                    <h4>Your selected Book - <span className="text-info">{find?.name}</span> </h4>
+                    <h4>Your selected service - <span className="text-info">{find?.name}</span> </h4>
                     <hr/>
                     <h4>Price: <span className="text-info"> {find?.cost}</span></h4>
                     <hr/>

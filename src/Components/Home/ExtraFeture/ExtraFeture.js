@@ -40,7 +40,7 @@ const extrainfo = [
 ]
 const ExtraFeture = () => {
     return (
-    <section className=" container"  style={{height:"500px", backgroundColor:"#ddd"}} >
+    <section className=" container"  style={{minHeight:"500px", backgroundColor:"#ddd"}} >
             <h2 className="text-center pt-3">We provide best solutions for a Clean Environment.</h2>
             <div className="d-flex justify-content-center">
 
